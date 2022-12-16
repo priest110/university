@@ -1,0 +1,70 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/bot.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+strings.h
+-
+estado.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.h
+bot.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/bot.h
+estado.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.h
+listas.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/listas.h
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/bot.h
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.c
+stdio.h
+-
+stdlib.h
+-
+estado.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.h
+listas.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/listas.h
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.h
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/listas.c
+stdio.h
+-
+stdlib.h
+-
+estado.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.h
+listas.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/listas.h
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/listas.h
+
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/main.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+strings.h
+-
+ctype.h
+-
+estado.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/estado.h
+listas.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/listas.h
+bot.h
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi/bot.h
+

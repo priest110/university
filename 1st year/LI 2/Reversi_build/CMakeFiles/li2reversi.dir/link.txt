@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/li2reversi.dir/main.c.o CMakeFiles/li2reversi.dir/estado.c.o CMakeFiles/li2reversi.dir/bot.c.o CMakeFiles/li2reversi.dir/listas.c.o -o li2reversi 

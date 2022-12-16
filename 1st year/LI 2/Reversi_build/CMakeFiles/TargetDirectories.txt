@@ -1,0 +1,3 @@
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi_build/CMakeFiles/rebuild_cache.dir
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi_build/CMakeFiles/li2reversi.dir
+/home/ruizinho/Desktop/Universidade/university/LI 2/Reversi_build/CMakeFiles/edit_cache.dir
