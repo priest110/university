@@ -4,8 +4,7 @@ This project consisted in the implementation of a Reversi game, a strategy board
 
 To reproduce you need to:
 
-'''
+```
 cd Reversi_build
 ./li2reversi
-'''
-
+```
