@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=EmailInexistenteException
+comment0.text=\n\ Exce\u00E7ao\ para\ o\ caso\ do\ email\ inserido\ nao\ existir.\n\n\ @author\ (Ana\ Rita\ Rosendo,\ Gon\u00E7alo\ Esteves,\ Rui\ Oliveira)\ \n\ @version\ 21\ de\ maio\ de\ 2019\n
+comment1.params=
+comment1.target=EmailInexistenteException()
+comment2.params=s
+comment2.target=EmailInexistenteException(java.lang.String)
+numComments=3

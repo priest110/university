@@ -1,0 +1,41 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-8-oracle/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.11.jar:/usr/share/bluej/hamcrest-core-1.3.jar:/usr/share/bluej/lang-stride.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!
+-d
+/home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc
+-encoding
+UTF-8
+-charset
+UTF-8
+/home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/Cliente.java
+<---- end of javadoc command ---->
+Loading source file /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/Cliente.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_201
+Building tree for all the packages and classes...
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/Cliente.html...
+/home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/Cliente.java:23: warning - Tag @return cannot be used in constructor documentation.  It can only be used in the following types of documentation: method.
+/home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/Cliente.java:63: warning - Tag @return cannot be used in constructor documentation.  It can only be used in the following types of documentation: method.
+/home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/Cliente.java:46: warning - Tag @return cannot be used in constructor documentation.  It can only be used in the following types of documentation: method.
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/package-frame.html...
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/package-summary.html...
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/allclasses-frame.html...
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/allclasses-noframe.html...
+Generating /home/goncalo/Área de Trabalho/2ºAno/2ºSemestre/POO/Trabalho/UMCarroJá!/doc/index.html...
+3 warnings

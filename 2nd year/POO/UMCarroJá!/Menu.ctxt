@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Menu
+comment0.text=\n\ Menu\ -\ implementa\ um\ menu\ de\ texto\n\ \n\ @author\ (Ana\ Rita\ Rosendo,\ Gon\u00E7alo\ Esteves,\ Rui\ Oliveira)\ \n\ @version\ 21\ de\ maio\ de\ 2019\n
+comment1.params=opcoes
+comment1.target=Menu(java.lang.String[])
+comment1.text=\n\ Construtor\ para\ objetos\ da\ classe\ Menu.\n
+comment2.params=
+comment2.target=void\ mostraMenu()
+comment2.text=\ \n\ Metodo\ que\ apresenta\ o\ menu.\n
+comment3.params=
+comment3.target=int\ leMenu()
+comment3.text=\n\ Metodo\ que\ le\ uma\ op\u00E7ao\ do\ menu.\n\ \n\ @return\ opcao\ lida\n
+comment4.params=
+comment4.target=int\ executa()
+comment4.text=\n\ M\u00E9todo\ para\ apresentar\ o\ menu\ e\ ler\ uma\ op\u00E7\u00E3o.\n\ \n\ @return\ opcao\ escolhida\n
+numComments=5
