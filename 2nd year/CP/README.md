@@ -1,4 +1,4 @@
-# Projeto
+# *Projeto* (Project)
 
 This project had two objectives:
 
