@@ -1,4 +1,4 @@
-# *Sistema de Gestão de Vendas* - SGV (Sales Management System - SMS)
+# *Sistema de Gestão de Vendas - SGV* (Sales Management System - SMS)
 
 In this project, the objective was to develop a sales management system for a distributor with 3 branches.
 
