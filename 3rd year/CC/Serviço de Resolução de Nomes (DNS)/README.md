@@ -1,5 +1,5 @@
 # *Serviço de Resolução de Nomes (DNS)* (Name Resolution Service (DNS))
 
-In this project, the focus was to design and implement an originator anonymisation overlay network, with security and privacy as the main objective to be achieved.
+In this project, the objective was to better understand the name resolution service, concretely DNS in a specific topology.
 
 To know how to work with this system, I advise you to check the assignment report (*relatorio.pdf*).
