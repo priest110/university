@@ -1,0 +1,15 @@
+paragem(1,183.0,-103678.36,-96590.26,bom,fechado_dos_lados,yes,vimeca,01,286.0,rua_aquilino_ribeiro,carnaxide_e_queijas).
+paragem(2,465.0,-106915.82,-96269.57,bom,fechado_dos_lados,no,vimeca,01,369.0,rua_direita_do_dafundo,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(3,186.0,-106975.22,-95602.61,bom,fechado_dos_lados,yes,vimeca,01,118.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(4,745,-102136.13485160771,-98663.30880207638,bom,fechado_dos_lados,no,vimeca,01,216.0,estrada_consiglieri_pedroso,barcarena).
+paragem(5,736,-102231.41,-98789.31,bom,sem_abrigo,no,vimeca,01,216.0,estrada_consiglieri_pedroso,barcarena).
+paragem(6,147,-102381.73,-98965.83,bom,fechado_dos_lados,yes,vimeca,01,950.0,estrada_das_palmeiras,barcarena).
+paragem(7,171,-103417.17,-99041.11,bom,sem_abrigo,no,vimeca,06,830.0,estrada_militar,barcarena).
+paragem(8,799,-104280.83,-98312.61,bom,fechado_dos_lados,no,vimeca,06,1766.0,praceta_antonio_leal_de_oliveira,carnaxide_e_queijas).
+paragem(9,1010,-104303.63612383853,-98554.77838335252,bom,sem_abrigo,no,vimeca,06,79.0,rua_dos_acores,carnaxide_e_queijas).
+paragem(11,147,-106975.22,-95602.61,bom,fechado_dos_lados,yes,vimeca,04,113.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(12,1,-2,-2,bom,fechado_dos_lados,yes,vimeca,04,113.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(13,183.0,-2,-2,bom,fechado_dos_lados,yes,vimeca,04,113.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(14,1,-2,-2,bom,fechado_dos_lados,yes,vimeca,04,113.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(15,2,-2,-2,bom,fechado_dos_lados,yes,vimeca,04,113.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
+paragem(16,186.0,-2,-2,bom,fechado_dos_lados,yes,vimeca,04,113.0,alameda_hermano_patrone,alges__linda_a_velha_e_cruz_quebrada_dafundo).
