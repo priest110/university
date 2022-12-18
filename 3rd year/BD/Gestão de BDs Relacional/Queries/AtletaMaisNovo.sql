@@ -1,0 +1,3 @@
+SELECT nome, ddn FROM Atleta
+ORDER BY ddn DESC
+LIMIT 1
