@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewData["Title"] - SGR</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/lib/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="~/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="~/lib/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/lib/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    @RenderSection("Styles", required: false)
+</head>
+
+@{
+    var identity = (System.Security.Claims.ClaimsIdentity)Context.User.Identity;
+    string e = identity.Claims.FirstOrDefault().Value;
+    ViewData["Email"] = e;
+}
+
+<body class="hold-transition sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a class="nav-link" asp-area="" asp-controller="Gerente" asp-action="Logout">Logout</a>
+                </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="info">
+                        <a href="#" class="d-block">@ViewData["Email"]</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                        with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="nav-icon fas fa-home"></i>
+                                <p>
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Funcionario" asp-action="Index">
+                                <i class="nav-icon fas fa-user-friends"></i>
+                                <p>
+                                    Funcionários
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Funcionario" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Funcionário</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Funcionario" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Funcionários</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Gerente" asp-action="Index">
+                                <i class="nav-icon fas fa-address-card"></i>
+                                <p>
+                                    Gerentes
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Gerente" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Gerente</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Gerente" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Gerentes</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Horario" asp-action="Index">
+                                <i class="nav-icon fas fa-clock"></i>
+                                <p>
+                                    Horários
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Horario" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Horário</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Horario" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Horários</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="DataHora" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Datas e Horas</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="DataHora" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Datas e Horas</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Reserva" asp-action="Index">
+                                <i class="nav-icon fas fa-utensils"></i>
+                                <p>
+                                    Reservas
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Reserva" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Reserva</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Reserva" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Reservas</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Mesa" asp-action="Index">
+                                <i class="nav-icon fas fa-circle-notch"></i>
+                                <p>
+                                    Mesas
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Mesa" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Mesa</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Mesa" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Mesas</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Index">
+                                <i class="nav-icon fas fa-hamburger"></i>
+                                <p>
+                                    Pedidos
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Pedido</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Pedidos</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Hoje">
+                                        <i class="nav-icon far fa-calendar-times"></i>
+                                        <p>Pedidos Hoje</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Artigo" asp-action="Index">
+                                <i class="nav-icon fas fa-lemon"></i>
+                                <p>
+                                    Artigos
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Artigo" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Artigo</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Artigo" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Artigos</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="ArtigoInPedido" asp-action="Index">
+                                <i class="nav-icon fas fa-circle"></i>
+                                <p>
+                                    ArtigoInPedido
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="ArtigoInPedido" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar ArtigoInPedido</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="ArtigoInPedido" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver ArtigoInPedido</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        -->
+
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Mercadoria" asp-action="Index">
+                                <i class="nav-icon fas fa-box"></i>
+                                <p>
+                                    Mercadorias
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Mercadoria" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Mercadoria</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Mercadoria" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Mercadorias</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="MercadoriaInArtigo" asp-action="Index">
+                                <i class="nav-icon fas fa-cookie-bite"></i>
+                                <p>
+                                    Receitas
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="MercadoriaInArtigo" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Receita</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="MercadoriaInArtigo" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Receitas</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="Fornecedor" asp-action="Index">
+                                <i class="nav-icon fas fa-truck"></i>
+                                <p>
+                                    Fornecedores
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Fornecedor" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Fornecedor</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Fornecedor" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Fornecedors</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a class="nav-link" asp-area="" asp-controller="PrecoMercadoriaFornecedor" asp-action="Index">
+                                <i class="nav-icon fas fa-dollar-sign"></i>
+                                <p>
+                                    Preços
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="PrecoMercadoriaFornecedor" asp-action="Adicionar">
+                                        <i class="nav-icon fas fa-plus"></i>
+                                        <p>Adicionar Preço</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="PrecoMercadoriaFornecedor" asp-action="Index">
+                                        <i class="nav-icon fas fa-list"></i>
+                                        <p>Ver Preços</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            @RenderBody()
+        </div>
+        <!-- /.content-wrapper -->
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="~/lib/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="~/lib/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="~/lib/sparklines/sparkline.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="~/lib/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="~/lib/moment/moment.min.js"></script>
+    <script src="~/lib/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="~/lib/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="~/lib/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="~/lib/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/js/adminlte.js"></script>
+    <!-- Select2 -->
+    <script src="/lib/select2/js/select2.full.min.js"></script>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

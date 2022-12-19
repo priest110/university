@@ -1,0 +1,536 @@
+### Requisitos Funcionais
+
+
+######## Template #########
+<UC>
+TIT:
+DES:
+CEN:
+PreC:
+PosC:
+FN:
+    * (Ator1->Ator2) Item 1
+    * (Ator1->Ator2) Item 2
+FA 1:[...](passo X)
+    * (Ator1->Ator2) Item 1
+    * (Ator1->Ator2) Item 2
+FE 1:[...](passo Y)
+    * (Ator1->Ator2) Item 1
+    * (Ator1->Ator2) Item 2
+</UC>
+######### Legenda #########
+TIT = Título
+DES = Descrição
+CEN = Cenários
+PreC = Pré-Condicao
+PosC = Pos-condicao
+FN = Fluxo Normal
+FA = Fluxo Alternativo
+FE = Fluxo de Exceção
+(Ator1->Ator2) = Ator1 envia menagem ao Ator2
+###########################
+
+
+########### UC 1 ##########
+<UC>
+TIT: Login
+DES: Efetua o login de um gerente no sistema.
+CEN: O António pretende efetuar login no sistema.
+PreC: Não ter feito login.
+PosC: Login efetuado. 
+FN:
+    * (Gerente->Sistema) Gerente introduz username e password
+    * (Sistema->Sistema) Sistema efetua o login
+FE 1:[combinação username/password errada](passo 2)
+    * (Sistema->Gerente) Sistema informa que os dados introduzidos estão incorretos
+</UC>
+
+########### UC 2 ##########
+<UC>
+TIT: Logout
+DES: Efetua o logout de um gerente.
+CEN: O António pretende efetuar logout do sistema.
+PreC: Ter login feito.
+PosC: Não possuir login feito.
+FN:
+    * (Gerente->Sistema) Gerente indica que pretende efetuar logout.
+    * (Sistema->Sistema) Sistema efetua logout.
+</UC>
+
+########### UC 3 ##########
+<UC>
+TIT: Adicionar Funcionários
+DES: Adiciona um Funcionário no sistema.
+CEN: Um Gerente pretende inserir um novo Funcionário no sistema.
+PreC: Login efetuado como Gerente.
+PosC: Funcionário inserido no sistema.
+FN:
+    * (Gerente->Sistema) Gerente indica que pretende inserir Funcionário.
+    * (Gerente->Sistema) Gerente indica o nome, data de nascimento, email e cargo do Funcionário.
+    * (Sistema->Sistema) Sistema valida os dados.
+    * (Sistema->Gerente) Sistema retorna mensagem de sucesso.
+FE 1:[Dados Insuficientes](passo 3)
+    * (Sistema->Gerente) Sistema avisa que os não foram fornecidos todos os dados.
+    * (Sistema->Sistema) Regressa ao passo 2.
+</UC>
+
+########### UC 4 ##########
+<UC>
+TIT: Remover Funcionário
+DES: Remove um Funcionário do Sistema.
+CEN: O Gerente pretende remover um Funcionário que saiu da empresa.
+PreC: Ter sessão iniciada como Gerente e existirem Funcionários no Sistema.
+PosC: Funcionário é removido do Sistema
+FN:
+    * (Gerente->Sistema) Gerente indica que pretende remover um Funcionário.
+    * (Sistema->Sistema) Sistema elimina o Funcionário do Sistema.
+    * (Sistema->Gerente) Sistema informa sobre sucesso.
+</UC>
+
+########### UC 5 ##########
+<UC>
+TIT: Editar Funcionário
+DES: Edita as informações de um Funcionário no Sistema.
+CEN: O Gerente pretende atualizar os dados de um Funcionário.
+PreC: Ter sessão iniciada como Gerente e existirem Funcionários no Sistema.
+PosC: O Funcionário tem os seus dados atualziados
+FN:
+    * (Gerente->Sistema) Gerente indica que pretende editar um Funcionário.
+    * (Gerente->Sistema) Gerente altera os dados pretendidos.
+    * (Sistema->Sistema) Sistema valida os dados.
+    * (Sistema->Gerente) Sistema retorna mensagem de sucesso.
+FE 1:[Dados Insuficientes](passo 3)
+    * (Sistema->Gerente) Sistema avisa que os não foram fornecidos todos os dados.
+    * (Sistema->Sistema) Regressa ao passo 2.
+</UC>
+
+########### UC 6 ##########
+<UC>
+TIT: Adicionar Artigos
+DES: Adiciona um Artigo no Sistema.
+CEN: O Gerente pretende inserir um novo Artigo no Sistema.
+PreC: Ter sessão iniciada como Gerente e existirem Mercadorias.
+PosC: Artigo inserido no Sistema.
+FN:
+    * (Gerente->Sistema) Gerente indica que pretende inserir Artigo.
+    * (Gerente->Sistema) Gerente indica o nome, preço e as Mercadorias e respetivas quantidades que o constituem.
+    * (Sistema->Sistema) Sistema valida os dados.
+    * (Sistema->Gerente) Sistema retorna mensagem de sucesso.
+FE 1:[Dados Insuficientes](passo 3)
+    * (Sistema->Gerente) Sistema avisa que os não foram fornecidos todos os dados.
+    * (Sistema->Sistema) Regressa ao passo 2.
+FE 2:[Artigo Duplicado](passo 3)
+    * (Sistema->Gerente) Sistema avisa que o Artigo já existe.
+    * (Sistema->Sistema) Regressa ao passo 2.
+</UC>
+
+<UC>
+TIT:Remover Artigos
+DES:Remover um dos artigos que já está no sistema
+CEN:O António quer remover o artigo "Prego no prato" porque o não vão fazer mais
+PreC:O sistema ter pelo menos um artigo
+PosC:O sistema ter menos um artigo que anteriormente
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do artigo a remover
+    * (Sistema->Sistema) Sistema verifica que esse artigo existe
+    * (Sistema->Sistema) Sistema elimina o artigo
+FE 1:[Artigo não existe no sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que esse artigo não existe
+</UC>
+
+<UC>
+TIT:Editar Artigos
+DES:Editar o nome, preço e mercadorias de um artigo
+CEN:O António quer mudar o preço do artigo "Prego no prato"
+PreC:O sistema ter pelo menos um artigo
+PosC:Os dados de um artigo terem sido mudados
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do artigo a editar
+    * (Sistema->Sistema) Sistema verifica que esse artigo existe
+    * (Gerente->Sistema) Gerente escolhe mudar o preço do artigo
+    * (Gerente->Sistema) Gerente insere o novo preço do artigo
+    * (Sistema->Sistema) Sistema muda o preço do artigo para o novo
+FA 1:[Gerente escolhe mudar o nome do artigo](passo 3)
+    * (Gerente->Sistema) Gerente insere o novo nome do artigo
+    * (Sistema->Sistema) Sistema muda o nome do artigo para o novo
+FA 2:[Gerente escolhe mudar as mercadorias do artigo](passo 3.1)
+    * (Gerente->Sistema) Gerente insere as novas mercadorias do artigo
+    * (Sistema->Sistema) Sistema muda as mercadorias do artigo para o novo
+FE 1:[Artigo não existe no sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que esse artigo não existe
+</UC>
+
+<UC>
+TIT:Adicionar Mercadorias
+DES:Adicionar uma nova mercadoria ao sistema 
+CEN:O António quer adicionar a nova mercadoria "Salmão"
+PreC:Gerente estar iniciado no sistema
+PosC:O Sistema ter uma nova mercadoria
+FN:
+    * (Gerente->Sistema) Gerente introduz nome da mercadoria a adicionar
+    * (Sistema->Sistema) Sistema verifica que essa mercadoria não existe
+    * (Gerente->Sistema) Gerente introduz quantidade mínima, marca, stock e observações da mercadoria
+    * (Sistema->Sistema) Sistema guarda mercadoria
+FE 1:[Mercadoria já existe no sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que essa mercadoria já existe
+</UC>
+
+<UC>
+TIT:Remover Mercadorias
+DES:Remover uma das mercadorias que já está no sistema
+CEN:O António quer remover a mercadoria "Salmão" porque já não vai usar artigos com essa mercadoria
+PreC:O sistema ter pelo menos uma mercadoria
+PosC:O sistema ter menos uma mercadoria que anteriormente
+FN:
+    * (Gerente->Sistema) Gerente insere o nome da mercadoria a remover
+    * (Sistema->Sistema) Sistema verifica que esse mercadoria existe
+    * (Sistema->Sistema) Sistema elimina a mercadoria
+FE 1:[Mercadoria não existe no sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que essa mercadoria não existe
+</UC>
+
+<UC>
+TIT:Editar Mercadorias
+DES:Editar os dados de uma mercadoria do sistema 
+CEN:O António quer atualizar o stock da mercadoria "Salmão"
+PreC:O Sistema ter pelo menos uma mercadoria
+PosC:Os dados de uma mercadoria terem sido mudados
+FN:
+    * (Gerente->Sistema) Gerente introduz nome da mercadoria a editar
+    * (Sistema->Sistema) Sistema verifica que mercadoria existe no sistema
+    * (Gerente->Sistema) Gerente indica que quer mudar stock da mercadoria
+    * (Gerente->Sistema) Gerente introduz nova stock do produto
+    * (Sistema->Sistema) Sistema muda a stock da mercadoria
+FA 1:[Gerente indica que quer mudar a quantidade minima](passo 3)
+    * (Gerente->Sistema) Gerente introduz nova quantidade minima
+    * (Sistema->Sistema) Sistema muda a quantidade minima da mercadoria
+FA 2:[Gerente indica que quer mudar a marca](passo 3.1)
+    * (Gerente->Sistema) Gerente introduz nova marca
+    * (Sistema->Sistema) Sistema muda a marca da mercadoria
+FA 3:[Gerente indica que quer mudar as observações](passo 3.1.1)
+    * (Gerente->Sistema) Gerente introduz nova observação
+    * (Sistema->Sistema) Sistema muda a observação da mercadoria
+</UC>
+
+<UC>
+TIT:Adicionar Fornecedores
+DES:Adicionar um novo fornecedor ao Sistema
+CEN:O António tem um novo fornecedor de carne bovina e quer coloca-lo no sistema
+PreC:Gerente estar iniciado no sistema
+PosC:O Sistema ter um novo fornecedor
+FN:
+    * (Gerente->Sistema) Gerente introduz nome e contacto de fornecedor
+    * (Sistema->Sistema) Sistema verifica que esse fornecedor não existe no sistema
+    * (Gerente->Sistema) Gerente introduz lista de mercadorias e preço associado da entrega desse fornecedor
+    * (Sistema->Sistema) Sistema verifica que essas mercadorias existem no sistema
+    * (Sistema->Sistema) Sistema guarda fornecedor
+FE 1:[Fornecedor já existe no sistema](passo 2)
+    * (Sistema->Sistema) Sistema informa que esse fornecedor já existe
+FE 2:[Uma mercadoria não existe no sistema](passo 4)
+    * (Sistema->Gerente) Sistema informa a mercadoria que não existe no sistema
+</UC>
+
+########## UC 13 ##########
+<UC>
+TIT:Remover Fornecedor.
+DES:Gerente remove Fornecedor que se encontra no Sistema.
+CEN:O Pedro quer remover o Fornecedor "Made in Italy" porque os produtos que fornece perderam qualidade.
+PreC:Gerente autenticado no Sistema e o Sistema tem pelo menos um Fornecedor.
+PosC:O Sistema tem menos um Fornecedor.
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do Fornecedor a remover.
+    * (Sistema->Sistema) Sistema verifica que esse Fornecedor existe.
+    * (Sistema->Sistema) Sistema elimina o Fornecedor.
+FE 1:[Fornecedor não existe no Sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que o Fornecedor inserido não existe.
+</UC>
+
+########## UC 14 ##########
+<UC>
+TIT:Editar Fornecedor.
+DES:Gerente edita o nome e/ou contacto de um Fornecedor.
+CEN:O Pedro quer mudar o contacto do Fornecedor "Super Bock".
+PreC:Gerente autenticado no Sistema e o Sistema tem pelo menos um Fornecedor.
+PosC:Os dados de determinado Fornecedor foram alterados.
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do Fornecedor a editar.
+    * (Sistema->Sistema) Sistema verifica que esse Fornecedor existe.
+    * (Gerente->Sistema) Gerente escolhe mudar o contacto do Fornecedor.
+    * (Gerente->Sistema) Gerente insere o novo contacto do Fornecedor.
+    * (Sistema->Sistema) Sistema altera o contacto do Fornecedor.
+FA 1:[Gerente escolhe mudar o nome do Fornecedor](passo 3)
+    * (Gerente->Sistema) Gerente insere o novo nome do Fornecedor.
+    * (Sistema->Sistema) Sistema altera o nome do Fornecedor.
+FE 1:[Fornecedor não existe no Sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que o Fornecedor inserido não existe.
+</UC>
+
+########## UC 15 ##########
+<UC>
+TIT:Adicionar Horário.
+DES:Gerente adiciona novo horário a um Funcionário.
+CEN:O Pedro quer adicionar o horário 23h-24h ao João.
+PreC:Gerente autenticado no Sistema e o Sistema tem pelo menos um Funcionário.
+PosC:A lista de horários de determinado Funcionário tem mais um horário.
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do Funcionário a adicionar horário.
+    * (Sistema->Sistema) Sistema verifica que esse Funcionário existe.
+    * (Gerente->Sistema) Gerente introduz novo horário.
+    * (Sistema->Sistema) Sistema verifica que o Funcionário não tem esse horário.
+    * (Sistema->Sistema) Sistema adiciona novo horário à lista de horários do Funcionário.
+FE 1:[Funcionário não existe no Sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que o Funcionário inserido não existe.
+FE 2:[Funcionário já tem esse horário](passo 4)
+    * (Sistema->Gerente) Sistema informa que esse o Funcionário já tem o horário inserido.
+</UC>
+
+########## UC 16 ##########
+<UC>
+TIT:Remover Horário.
+DES:Gerente remove horário a um Funcionário.
+CEN:O Pedro quer remover o horário 13h-14h ao Luís.
+PreC:Gerente autenticado no Sistema e o Sistema tem pelo menos um Funcionário.
+PosC:A lista de horários de determinado Funcionário tem menos um horário.
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do Funcionário a remover horário.
+    * (Sistema->Sistema) Sistema verifica que esse Funcionário existe.
+    * (Gerente->Sistema) Gerente introduz novo horário.
+    * (Sistema->Sistema) Sistema verifica que o Funcionário tem o horário inserido.
+    * (Sistema->Sistema) Sistema remove o horário inserido à lista de horários do Funcionário.
+FE 1:[Funcionário não existe no Sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que o Funcionário inserido não existe.
+FE 2:[Funcionário não tem o horário inserido](passo 4)
+    * (Sistema->Gerente) Sistema informa que o Funcionário não tem o horário inserido.
+</UC>
+
+########## UC 17 ##########
+<UC>
+TIT:Editar Horário.
+DES:Gerente edita o horário de um Funcionário.
+CEN:O Pedro quer editar o horário do José porque vai trocar uma folga com um colega.
+PreC:Gerente autenticado no Sistema e o Sistema tem pelo menos um Funcionário.
+PosC:A lista de horários de determinado Funcionário foram alterados.
+FN:
+    * (Gerente->Sistema) Gerente insere o nome do Funcionário a editar.
+    * (Sistema->Sistema) Sistema verifica que esse Funcionário existe.
+    * (Gerente->Sistema) Gerente edita o horário do Funcionário.
+    * (Sistema->Sistema) Sistema altera o horário do Funcionário.
+FE 1:[Funcionário não existe no Sistema](passo 2)
+    * (Sistema->Gerente) Sistema informa que o Funcionário inserido não existe.
+</UC>
+
+########## UC 18 ##########
+<UC>
+TIT:Adicionar Reserva.
+DES:Funcionário adiciona reserva à lista de reservas de um Cliente.
+CEN:O Luís quer adicionar uma reserva feita pelo Pedro para uma data e hora.
+PreC:Funcionário autenticado no Sistema.
+PosC:A lista de reservas de determinado Cliente tem mais uma reserva.
+FN:
+    * (Gerente->Sistema) Insere o nome do Cliente que quer adicionar a reserva.
+    * (Sistema->Sistema) Sistema verifica que o Cliente tem lista de reservas.
+    * (Gerente->Sistema) Insere a data e hora que o Cliente pretende fazer reserva.
+    * (Sistema->Sistema) Sistema verifica que o Cliente ainda não tem reserva para essa data e hora.
+    * (Sistema->Sistema) Sistema adiciona a reserva à lista de reservas.
+FA 1:[Cliente ainda não tem lista de reservas](passo 2)
+    * (Sistema->Sistema) Sistema cria lista de reservas para o Cliente inserido.
+    * (Sistema->Sistema) Avança para o passo 3.
+FE 1:[Cliente já tem reserva para essa data e hora](passo 4)
+    * (Sistema->Gerente) Sistema informa que o Cliente já tem reserva para a data e hora inserida.
+</UC>
+
+########## UC 19 ##########
+<UC>
+TIT:Remover Reservas.
+DES:Remover da lista de reservas a reserva de um cliente.
+CEN:O João quer remover a reserva feita pelo Pedro para uma data e hora.
+PreC:O cliente que quer anular uma reserva tem de ter uma reserva já feita.
+PosC:A lista de reservas nao contem a reserva do cliente para a hora em questão.
+FN:
+    * (Gerente->Sistema) Insere o nome do cliente que quer remover a reserva.
+    * (Sistema->Gerente) Mostra as reservas feitas por aquele cliente que ainda estão em aberto.
+    * (Gerente->Sistema) Seleciona a reserva com a data e hora prentendida.
+    * (Sistema->Gerente) Pergunta se tem a certeza da remoção.
+    * (Gerente->Sistema) Confirma a remoção.
+    * (Sistema->Sistema) Remove a reserva da lista de reservas.
+FE 1:[Gerente não confirma remoção](passo 4)
+    * (Gerente->Sistema) Não confirma a remoção.
+</UC>
+########## UC 20 ##########
+<UC>
+TIT:Editar Reservas.
+DES:Editar da lista de reservas uma reserva feita por um dado cliente a uma hora.
+CEN:O João quer alterar a hora da reserva feita pelo Pedro para uma hora mais tarde.
+PreC:O cliente que quer editar uma reserva tem de ter uma reserva já feita. 
+PosC:A reserva fica editada.
+FN:
+    * (Gerente->Sistema) Insere o nome do cliente que quer editar a reserva.
+    * (Sistema->Gerente) Mostra as reservas feitas por aquele cliente que ainda estão em aberto.
+    * (Gerente->Sistema) Seleciona a reserva com a data e hora antiga e edita a hora.
+    * (Sistema->Sistema) Verifica se existem mesas livres para a nova hora.
+    * (Sistema->Gerente) Informa que a reserva foi editada e qual a nova mesa.
+FE 1:[Não há mesas livres para a nova hora](passo 4)
+    * (Sistema->Gerente) Informa que não há mesas livres para a hora pretendida.
+</UC>
+########## UC 24 ##########
+<UC>
+TIT:Gerar estatísticas.
+DES:Gerente pede estatísticas sobre o restaurante no ultimo mês.
+CEN:O João pretende saber quantos pregos no prato foram vendidos no mês de Janeiro.
+PreC:Lista de pedidos fechados ou abertos não estar vazia.
+PosC:Estatísticas pedidas mostradas ao gerente.
+FN:
+    * (Gerente->Sistema) Escolhe período de tempo que quer analisar.
+    * (Sistema->Sistema) Recolhe todos os pedidos efetuados no período pretendido.
+    * (Sistema->Gerente) Informa os pedidos feitos, separados por diferentes artigos assim como quantia lucrada. 
+FA 1:[Escolhe ver estatísticas por produto](passo 1.1)
+    * (Gerente->Sistema) Informa que artigo quer analisar.
+    * (Sistema->Gerente) Informa sobre o número de vezes que o artigo foi comprado assim como o lucro que já deu.
+FE 1:[Não há pedidos no intervalo de tempo pretendido](passo 2.1)
+    * (Sistema->Gerente) Informa que não existe nenhum pedido no intervalo de tempo pretendido.
+</UC>
+########## UC 25 ##########
+<UC>
+TIT: Verificar mercadorias em falta.
+DES: Permite verificar quais mercadorias estão em falta.
+CEN: O Gerente Pedro pretende verificar quais as mercadorias no seu restaurante.
+PreC: Sessão iniciada como Gerente.
+PosC: Ficha de mercadorias em falta criada.
+FN:
+    * (Sistema->Gerente) Gerente indica que pretende verificar marcadorias em falta.
+    * (Sistema->Sistema) Sistema gera ficha com as mercadorias com o stock abaixo do minímo.
+    * (Sistema->Gerente) Sistema apresenta ficha com as mercadorias em falta.
+</UC>
+########## UC 26 ##########
+<UC>
+TIT: Login.
+DES: Permite fazer login na aplicação Mobile.
+CEN: Luís, o empregado de mesa do restaurante, pretende aceder à aplicação para poder registar pedidos.
+PreC: Sessão não iniciada.
+PosC: Sessão iniciada como Funcionário.
+FN:
+    * (Funcionario->Sistema) Funcionario introduz username e password.
+    * (Sistema->Sistema) Sistema efetua o login.
+FE 1:[combinação username/password errada](passo 2)
+    * (Sistema->Funcionario) Sistema informa que os dados introduzidos estão incorretos.
+</UC>
+########## UC 27 ##########
+<UC>
+TIT: Logout.
+DES: Permite fazer logout da aplicação Mobile.
+CEN: Luís, o empregado de mesa do restaurante, acabou o seu turno e pretende terminar sessão da aplicação.
+PreC: Sessão iniciada como Funcionário.
+PosC: Sessão não iniciada.
+FN:
+    * (Funcionario->Sistema) Funcionario indica que pretende terminar sessão.
+    * (Sistema->Funcionario) Sistema termina sessão.
+</UC>
+########## UC 28 ##########
+<UC>
+TIT: Registar Pedido.
+DES: Permite registar um pedido e associa-lo a uma certa mesa.
+CEN: Luís pretende registar um pedido e associa-lo à mesa 27 do restaurante.
+PreC: Sessão iniciada como funcionário de mesa.
+PosC: Pedido criado em estado «por faturar».
+FN:
+    * (Funcionario->Sistema) Funcionario indica que pretende registar um pedido.
+    * (Sistema->Gerente) Sistema pede mesa à qual pretende associar o pedido.
+    * (Funcionario->Sistema) Funcionario indica mesa à qual pretende associar.
+    * (Sistema->Sistema) Sistema apresenta lista de artigos que podem ser consumidos.
+    * ) «Inserir Artigo em Pedido»
+    * (Sistema->Sistema) Sistema regista pedido em estado «por faturar».
+FE 1:[Número de mesa inválido](passo 3)
+    * (Sistema->Funcionario) Sistema alerta que o número de mesa indicado é inválido.
+FA 1:[Funcionário pretende adicionar mais artigos](passo 5)
+    * ) Regressa ao passo 5.
+</UC>
+########## UC 29 ##########
+<UC>
+TIT: Faturar Pedido.
+DES: Permite faturar um pedido existente.
+CEN: Carlos, o funcionário do balcão, pretende faturar o pedido associado à mesa 27.
+PreC: Sessão iniciada como funcionário do balcão.
+PosC: Pedido no estado «faturado».
+FN:
+    * (Funcionar->Sistema) Funcionario indica que pretende faturar um pedido.
+    * (Sistema->Sistema) Sistema pede a mesa da qual pretende faturar o pedido.
+    * (Funcionario->Sistema) Funcionar indica mesa que pretende faturar.
+    * (Sistema->Sistema) Sistema gera recibo com todos os artigos e total a pagar pelo pedido.
+    * (Sistema->Funcionario) Sistema apresenta recibo.
+    * (Funcionario->Sistema) Funcionario confirma faturação.
+    * (Sistema->Sistema) Sistema fatura o pedido.
+    * (Sistema->Funcionar) Sistema apresenta mensagem de sucesso. 
+FE 1:[Número de mesa inválido](passo 3)
+    * (Sistema->Funcionario) Sistema alerta que o número de mesa indicado é inválido.
+FE 2:[Mesa não possui pedido associado](passo 3)
+    * (Sistema->Funcionario) Sistema alerta que mesa não possui pedido associado.
+FA 1:[Funcinario cancela operação](passo 6)
+    * (Sistema->Sistema) Sistema alerta que a operação foi cancelada.
+</UC>
+########## UC 30 ##########
+<UC>
+TIT: Editar Pedido.
+DES: Permite editar um pedido existente.
+CEN: Por acidente, o Luís indicou que a mesa 27 consumiu 2 Coca-Colas, porém esta não consumiu bebidas. O Luís pretende corrigir o seu erro.
+PreC: Sessão iniciada como funcionário de mesa.
+PosC: Pedido editado.
+FN:
+    * (Funcionario->Sistema) Funcionario seleciona pedido.
+    * (Funcionario->Sistema) Funcionario indica que pretende editar pedido.
+    * (Sistema->Funcionario) Sistema apresenta detalhes do pedido.
+    * (Funcionario->Sistema) Funcionario indica que pretende editar mesa do pedido.
+    * (Funcionario->Sistema) Funcionario indica nova mesa à qual associar.
+    * (Sistema->Sistema) Sistema altera mesa associada ao pedido.
+    * (Sistema->Funcionario) Sistema avisa que operação foi feita com sucesso.
+FE 1:[Mesa inválida](passo 5)
+    * ) Sistema alerta que mesa indicada é inválida.
+FE 2:[Mesa já possui pedido associado](passo 5)
+    * ) Sistema alerta que a mesa indicada já possui pedido associado.
+FA 1:[Funcionario pretende eliminar artigos](passo 4)	
+    * ) «Eliminar Artigo de Pedido»
+    * ) Regressa ao passo 7.
+FA 2:[Funcionario pretende adicionar artigos](passo 4)	
+    * ) «Inserir artigo em Pedido»
+    * ) Regressa ao passo 7.
+</UC>
+########## UC 31 ##########
+<UC>
+TIT: Inserir Artigo em Pedido
+DES: Adiciona um Artigo num Pedido.
+CEN: O António pretende adicionar um determinado Artigo num Pedido.
+PreC: Login efetuado como Funcionário e existir um Pedido.
+PosC: Artigo adicionado ao Pedido
+FN:
+    * (Funcionário->Sistema) Funcionário seleciona o Pedido.
+    * (Funcionário->Sistema) Funcionário indica que pretende adicionar um Artigo.
+    * (Funcionário->Sistema) Funcionário indica qual o Artigo que pretende adicionar.
+    * (Funcionário->Sistema) Funcionário indica a quantidade do Artigo que pretende adicionar.
+    * (Sistema->Sistema) Sistema atualiza o Pedido com as novas alterações.
+    * (Sistema->Funcionário) Sistema informa sobre sucesso da operação.
+FA 1:[Artigo já existente no Pedido](passo 3)
+    * (Funcionário->Sistema) Funcionário indica a quantidade adicional do Artigo que pretende adicionar. 
+    * (Sistema->Sistema) Sistema atualiza a quantidade do Artigo no Pedido.
+    * (Sistema->Funcionário) Sistema informa sobre sucesso da operação.
+FE 1:[Artigo sem Stock](passo 4)
+    * (Sistema->Funcionário) Sistema informa que não existe a quantidade pretendida em Stock.
+    * (Sistema->Sistema) Regressa ao passo 3.
+</UC>
+
+########## UC 32 ##########
+<UC>
+TIT: Remover Artigo de Pedido
+DES: Remove um Artigo de um Pedido.
+CEN: O António pretende corrigir um engano no Pedido e para isso quer remover um Artigo.
+PreC: Login efetuado como Funcionário e existir um Pedido que possua pelo menos um Artigo.
+PosC: Artigo removido de  um Pedido.
+FN:
+    * (Funcionário->Sistema) Funcionário seleciona o Pedido.
+    * (Funcionário->Sistema) Funcionário seleciona o Artigo que pretende remover.
+    * (Sistema->Funcionário) Sistema pede confirmação da operação.
+    * (Funcionário->Sistema) Funcionário confirma que pretende remover o Artigo.
+    * (Sistema->Sistema) Sistema atualiza o Pedido com as novas alterações.
+    * (Sistema->Funcionário) Sistema informa sobre sucesso da operação.
+FA 1:[Funcionário não confirma operação](passo 4)
+    * (Funcionário->Sistema) Funcionário indica que não pretende cofirmar a operação. 
+    * (Sistema->Sistema) Sistema cancela a operação.
+</UC>
