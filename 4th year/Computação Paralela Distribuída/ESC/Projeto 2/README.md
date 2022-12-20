@@ -1,7 +1,5 @@
-## Server
+# *Paralelização de um Ray Tracer Simples* (Parallelization of a Simple Ray Tracer)
 
-g++ server.cpp -o server -pthread
+The main objective of this work was to implement a simple database system, using the client-server paradigm, in order to analyse the system behaviour, in particular to estimate its behaviour in a high performance and high demand system, calculating the installation and maintenance costs.
 
-## Cliente
-
-g++ client.cpp -o client
+To learn more about this implementation, I advise you to check the assignment report (*relatorio.pdf*).
