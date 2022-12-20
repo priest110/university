@@ -1,0 +1,10 @@
+[
+  {
+    'repeat(100)': {
+          	morada: '{{street()}}, {{integer(100, 999)}}', 
+      		cod_post: '{{integer(1, 10000)}} - {{integer(1, 500)}}',
+      		cidade: '{{random("Braga", "Lisboa", "Porto", "Coimbra", "Aveiro")}}',
+      		pais: 'Portugal',
+    	}
+  }
+]

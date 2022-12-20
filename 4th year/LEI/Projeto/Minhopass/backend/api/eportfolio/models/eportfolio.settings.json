@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eportfolio",
+  "info": {
+    "name": "Eportfolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "genero": {
+      "type": "string"
+    },
+    "nacionalidade": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "telemovel": {
+      "type": "string"
+    },
+    "profissao": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "eportfolios"
+    },
+    "endereco": {
+      "model": "endereco"
+    },
+    "tipos": {
+      "collection": "tipo",
+      "via": "eportfolio"
+    },
+    "trabalhos": {
+      "collection": "experiencia-profissional",
+      "via": "eportfolio"
+    },
+    "educacoes": {
+      "collection": "educacao",
+      "via": "eportfolio"
+    },
+    "competencias_pessoais": {
+      "model": "competencias-pessoais"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "data_nasc": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comp_pess",
+  "info": {
+    "name": "Competências Pessoais",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "carta_conducao": {
+      "type": "boolean"
+    },
+    "lingua_materna": {
+      "type": "json"
+    },
+    "outra_lingua": {
+      "type": "json"
+    },
+    "comp_digital": {
+      "type": "json"
+    },
+    "descricao": {
+      "type": "text"
+    }
+  }
+}

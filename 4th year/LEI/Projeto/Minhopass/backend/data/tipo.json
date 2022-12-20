@@ -1,0 +1,1592 @@
+[
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 200
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 135
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 159
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 87
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 55
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 200
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 156
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 116
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 175
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {    
+  	"nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 92
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 95
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 81
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 65
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 162
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 128
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 127
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 77
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 152
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 143
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 171
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 134
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 102
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 51
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 112
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 63
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 100
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 90
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 70
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 87
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 177
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 158
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 135
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 109
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 120
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 132
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 74
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 147
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 139
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 171
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 126
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 166
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 54
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 61
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 117
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 73
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 142
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 95
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 93
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 137
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 58
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 91
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 81
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 149
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 97
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 88
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 68
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 195
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 76
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 85
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 159
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 147
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 178
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 123
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 145
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 170
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 74
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 91
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 68
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 103
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 110
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 183
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 93
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 157
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 51
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 124
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 175
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 121
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 65
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 157
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 159
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 193
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 99
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 117
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 176
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 63
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 59
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 123
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 103
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 64
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 73
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 195
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 128
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 50
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 93
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 185
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 139
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 195
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 146
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas discutidos",
+        "descricao": "Filosofia"
+      }
+    ]
+  },
+  {
+
+    "nome": "orientação de teses",
+    "campo_int": [
+      {
+        "nome": "Número de empresas envolvidas",
+        "valor": 198
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Aquecimento Global"
+      }
+    ]
+  },
+  {
+
+    "nome": "participação em conferências",
+    "campo_int": [
+      {
+        "nome": "Número de pessoas envolvidas",
+        "valor": 68
+      }
+    ],
+    "campo_txt": [
+      {
+        "nome": "Temas abordados",
+        "descricao": "Filosofia"
+      }
+    ]
+  }
+]

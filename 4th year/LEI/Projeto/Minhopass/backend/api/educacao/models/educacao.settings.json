@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "edu_form",
+  "info": {
+    "name": "Educação",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "organizacao": {
+      "type": "string"
+    },
+    "em_curso": {
+      "type": "boolean"
+    },
+    "area": {
+      "type": "string"
+    },
+    "class_final": {
+      "type": "integer"
+    },
+    "tese": {
+      "type": "string"
+    },
+    "assunto_princ": {
+      "type": "string"
+    },
+    "qeq": {
+      "type": "integer"
+    },
+    "class_nacional": {
+      "type": "integer"
+    },
+    "tipo_creditos": {
+      "type": "string"
+    },
+    "num_creditos": {
+      "type": "integer"
+    },
+    "valido_ate": {
+      "type": "datetime"
+    },
+    "sitio_web": {
+      "type": "string"
+    },
+    "hiper": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "text"
+    },
+    "data_int": {
+      "type": "json"
+    },
+    "endereco": {
+      "model": "endereco"
+    },
+    "eportfolio": {
+      "via": "educacoes",
+      "model": "eportfolio"
+    }
+  }
+}

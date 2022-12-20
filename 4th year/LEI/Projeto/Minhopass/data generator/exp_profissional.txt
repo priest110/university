@@ -1,0 +1,26 @@
+[
+  {
+    'repeat(100)': {
+	      	funcao: '{{random("secretário", "arrumador", "diretor")}}',
+	      	ent_empregadora: '{{random("Primavera", "CTT", "Continente")}}',
+	      	cidade: '{{random("Braga", "Lisboa", "Porto", "Coimbra", "Aveiro")}}',
+	      	em_curso: '{{bool()}}',
+	      	responsabilidades: '{{random("gerir chamadas", "avaliar despesas", "contratar estagiários")}}',
+	      	id_endereco: '{{index()}}',
+	      	data_int: {
+	      		inicio: '{{date(new Date(1970,0,1))}}',
+	      		fim: '{{date(new Date(1970,0,1))}}',
+	      	},
+	      	atividade_setor: '{{random("Económica", "Agrícula", "Comunicações")}}',
+	      	departamento: '{{random("Limpeza", "Recursos Humanos")}}',
+	      	email_organizacao() {
+	      		return  `${this.ent_empregadora}@${["gmail.com", "hotmail.com", "sapo.pt"][Math.floor(Math.random() * ["gmail.com", "hotmail.com", "sapo.pt"].length)]}`.toLowerCase().replace(/\s/g,'');
+	      	},
+	      	sitio_web() {
+	      		return  `www.${this.ent_empregadora}${[".com", ".pt", ".gov"][Math.floor(Math.random() * [".com", ".pt", ".gov"].length)]}`.toLowerCase().replace(/\s/g,'');
+	      	},
+	      	hiper: null,
+	      	descricao: '{{lorem(1, "paragraphs")}}',
+	 }
+  }
+]

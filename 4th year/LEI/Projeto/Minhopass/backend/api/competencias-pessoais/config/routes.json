@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/competencias-pessoais",
+      "handler": "competencias-pessoais.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competencias-pessoais/count",
+      "handler": "competencias-pessoais.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/competencias-pessoais/:id",
+      "handler": "competencias-pessoais.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/competencias-pessoais",
+      "handler": "competencias-pessoais.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/competencias-pessoais/:id",
+      "handler": "competencias-pessoais.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/competencias-pessoais/:id",
+      "handler": "competencias-pessoais.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

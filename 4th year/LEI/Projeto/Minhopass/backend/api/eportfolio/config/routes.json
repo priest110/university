@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/eportfolios",
+      "handler": "eportfolio.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eportfolios/count",
+      "handler": "eportfolio.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/eportfolios/:id",
+      "handler": "eportfolio.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/eportfolios",
+      "handler": "eportfolio.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/eportfolios/:id",
+      "handler": "eportfolio.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/eportfolios/:id",
+      "handler": "eportfolio.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

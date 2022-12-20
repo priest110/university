@@ -1,0 +1,28 @@
+[
+  {
+    'repeat(100)': {
+          	titulo: '{{random("licenciatura", "mestrado", "doutoramento", "12º ano")}}',
+	      	organizacao: '{{random("Universidade do Minho", "Universidade do Porto", "Escola Secundária Carlos Amarante", "Universidade de Lisboa")}}',
+	      	id_endereco: '{{index()}}',
+	      	data_int: {
+	      		inicio: '{{date(new Date(1970,0,1))}}',
+	      		fim: '{{date(new Date(1970,0,1))}}',
+	      	},
+	      	em_curso: '{{bool()}}',
+	      	area: '{{random("Engenharia", "Saúde", "Ensino", "Física")}}',
+	      	class_final: '{{integer(10, 20)}}',
+	      	tese: '{{random("Sistemas Distribuídos", "Desenvolvimento Web")}}',
+	      	assunto_princ: '{{random("Aplicações REST")}}',
+	      	qeq: '{{integer(1, 8)}}',
+	      	class_nacional: '{{integer(1, 100)}}',
+	      	tipo_creditos: '{{random("ECT", "Outro")}}',
+	      	num_creditos: '{{integer(300, 400)}}',
+	      	valido_ate: '{{date(new Date(2021,0,1))}}',
+	      	sitio_web() {
+	      		return  `www.${this.organizacao}${[".com", ".pt", ".gov"][Math.floor(Math.random() * [".com", ".pt", ".gov"].length)]}`.toLowerCase().replace(/\s/g,'');
+	      	},
+	      	hiper: null,
+	      	descricao: '{{lorem(1, "paragraphs")}}',
+    	}
+  }
+]

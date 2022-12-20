@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo",
+  "info": {
+    "name": "Tipo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nome": {
+      "type": "string"
+    },
+    "campo_int": {
+      "type": "json"
+    },
+    "campo_txt": {
+      "type": "json"
+    },
+    "eportfolio": {
+      "via": "tipos",
+      "model": "eportfolio"
+    }
+  }
+}

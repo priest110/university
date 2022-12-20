@@ -1,0 +1,602 @@
+[
+  {
+    "morada": "Oriental Boulevard, 701",
+    "cod_post": "9695 - 64",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Quincy Street, 922",
+    "cod_post": "9806 - 125",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Linden Boulevard, 881",
+    "cod_post": "8257 - 51",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Strickland Avenue, 576",
+    "cod_post": "2829 - 64",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Greene Avenue, 421",
+    "cod_post": "1548 - 446",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Huron Street, 291",
+    "cod_post": "5650 - 99",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Guider Avenue, 641",
+    "cod_post": "8959 - 451",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Elmwood Avenue, 831",
+    "cod_post": "4408 - 192",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Rock Street, 693",
+    "cod_post": "9919 - 202",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Wilson Avenue, 697",
+    "cod_post": "3970 - 390",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Havemeyer Street, 827",
+    "cod_post": "8087 - 253",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Vanderbilt Street, 890",
+    "cod_post": "533 - 76",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Morton Street, 500",
+    "cod_post": "6828 - 53",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Malbone Street, 287",
+    "cod_post": "6291 - 75",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Jewel Street, 125",
+    "cod_post": "4917 - 188",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Bath Avenue, 326",
+    "cod_post": "825 - 402",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Banner Avenue, 306",
+    "cod_post": "2400 - 104",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Herkimer Court, 988",
+    "cod_post": "9805 - 298",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Ira Court, 688",
+    "cod_post": "3380 - 375",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Kimball Street, 556",
+    "cod_post": "7463 - 264",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Cooke Court, 401",
+    "cod_post": "2738 - 395",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Clarendon Road, 857",
+    "cod_post": "3562 - 220",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Delmonico Place, 482",
+    "cod_post": "9232 - 221",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Oak Street, 958",
+    "cod_post": "5679 - 264",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Brown Street, 695",
+    "cod_post": "3182 - 394",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Lott Avenue, 640",
+    "cod_post": "8439 - 58",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Middleton Street, 634",
+    "cod_post": "1590 - 290",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Aberdeen Street, 753",
+    "cod_post": "1455 - 2",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Ocean Parkway, 987",
+    "cod_post": "604 - 294",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Flatbush Avenue, 745",
+    "cod_post": "6627 - 31",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Vanderbilt Avenue, 479",
+    "cod_post": "3447 - 389",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Taylor Street, 623",
+    "cod_post": "2391 - 289",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Monitor Street, 825",
+    "cod_post": "5858 - 491",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Hall Street, 132",
+    "cod_post": "9021 - 123",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Portland Avenue, 809",
+    "cod_post": "5075 - 98",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Centre Street, 952",
+    "cod_post": "9048 - 75",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Tapscott Street, 310",
+    "cod_post": "1701 - 245",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Story Street, 749",
+    "cod_post": "6933 - 409",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Schweikerts Walk, 291",
+    "cod_post": "5641 - 22",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Cypress Court, 122",
+    "cod_post": "6980 - 276",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Fleet Walk, 426",
+    "cod_post": "4236 - 12",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Aviation Road, 886",
+    "cod_post": "5465 - 383",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Garnet Street, 389",
+    "cod_post": "9605 - 131",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Boardwalk , 408",
+    "cod_post": "7300 - 309",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Fenimore Street, 638",
+    "cod_post": "4532 - 323",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Doscher Street, 777",
+    "cod_post": "7461 - 138",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "President Street, 159",
+    "cod_post": "5372 - 388",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Pierrepont Place, 314",
+    "cod_post": "1251 - 309",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Woods Place, 758",
+    "cod_post": "7427 - 72",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Chauncey Street, 455",
+    "cod_post": "3163 - 474",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Poly Place, 836",
+    "cod_post": "2295 - 10",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Furman Street, 273",
+    "cod_post": "4459 - 470",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Henry Street, 348",
+    "cod_post": "4524 - 99",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Argyle Road, 636",
+    "cod_post": "977 - 365",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Bulwer Place, 282",
+    "cod_post": "4555 - 427",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Arlington Place, 664",
+    "cod_post": "6048 - 292",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Underhill Avenue, 555",
+    "cod_post": "7294 - 383",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Wythe Avenue, 687",
+    "cod_post": "7154 - 28",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Neptune Court, 175",
+    "cod_post": "8833 - 390",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Brevoort Place, 951",
+    "cod_post": "2313 - 492",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Degraw Street, 648",
+    "cod_post": "2055 - 426",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Colin Place, 897",
+    "cod_post": "3566 - 15",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Newel Street, 704",
+    "cod_post": "7003 - 280",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Chester Street, 136",
+    "cod_post": "8006 - 74",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Florence Avenue, 894",
+    "cod_post": "451 - 366",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Newton Street, 266",
+    "cod_post": "6257 - 206",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Jerome Street, 167",
+    "cod_post": "2912 - 155",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Orange Street, 560",
+    "cod_post": "5667 - 172",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Union Avenue, 416",
+    "cod_post": "5566 - 188",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Ross Street, 844",
+    "cod_post": "3452 - 210",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Canda Avenue, 713",
+    "cod_post": "3460 - 112",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Harway Avenue, 553",
+    "cod_post": "8998 - 86",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Union Street, 440",
+    "cod_post": "8942 - 144",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Carlton Avenue, 243",
+    "cod_post": "2617 - 323",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Harrison Place, 334",
+    "cod_post": "1080 - 375",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Williamsburg Street, 881",
+    "cod_post": "5392 - 251",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Humboldt Street, 119",
+    "cod_post": "1972 - 30",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Quentin Street, 615",
+    "cod_post": "6307 - 192",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Cove Lane, 293",
+    "cod_post": "515 - 274",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Forrest Street, 807",
+    "cod_post": "9324 - 197",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Ridge Court, 406",
+    "cod_post": "3552 - 234",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Morgan Avenue, 522",
+    "cod_post": "9728 - 99",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Douglass Street, 498",
+    "cod_post": "4844 - 370",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Bouck Court, 947",
+    "cod_post": "5651 - 467",
+    "cidade": "Aveiro",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Eaton Court, 880",
+    "cod_post": "9473 - 338",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Canal Avenue, 260",
+    "cod_post": "9018 - 355",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Kenmore Terrace, 916",
+    "cod_post": "632 - 326",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Greenpoint Avenue, 334",
+    "cod_post": "3331 - 229",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Cumberland Walk, 196",
+    "cod_post": "8591 - 96",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Woodbine Street, 584",
+    "cod_post": "1311 - 95",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Neptune Avenue, 806",
+    "cod_post": "9592 - 412",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Dennett Place, 943",
+    "cod_post": "3197 - 193",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Conover Street, 819",
+    "cod_post": "5692 - 186",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Doone Court, 527",
+    "cod_post": "7143 - 162",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Varanda Place, 387",
+    "cod_post": "7223 - 285",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Colonial Court, 618",
+    "cod_post": "4910 - 20",
+    "cidade": "Lisboa",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Lawn Court, 761",
+    "cod_post": "5861 - 309",
+    "cidade": "Coimbra",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Montague Street, 940",
+    "cod_post": "5162 - 313",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Indiana Place, 353",
+    "cod_post": "764 - 463",
+    "cidade": "Braga",
+    "pais": "Portugal"
+  },
+  {
+    "morada": "Carroll Street, 753",
+    "cod_post": "644 - 160",
+    "cidade": "Porto",
+    "pais": "Portugal"
+  }
+]

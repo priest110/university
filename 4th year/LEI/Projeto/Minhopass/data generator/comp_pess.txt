@@ -1,0 +1,21 @@
+[
+  {
+	    'repeat(100)': {
+		  	id_comp_pess: '{{index()}}',
+		  	id_portfolio: '{{index()}}',
+		    carta_conducao: '{{bool()}}',
+		      	lingua_materna: {
+		      		nome: '{{random("Português", "Espanhol", "Italiano", "Inglês", "Francês")}}',
+		      	},
+		      	outra_lingua: {
+		      		nome: '{{random("Português", "Espanhol", "Italiano", "Inglês", "Francês")}}',
+		      	},
+		      	comp_digital: [
+		      		{
+		      			competencia: '{{random("Linguagem C", "Linguagem Java", "Linguagem Python")}}',
+		      		}
+		      	],
+		      	descricao: '{{lorem(1, "paragraphs")}}',
+	    	}
+	  }
+]

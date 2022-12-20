@@ -1,0 +1,88 @@
+Encontrar todos os empregados que trabalham no departamento IT
+```
+
+db.humanresources.find({"department.name":"IT"}, 
+	{_id: 0, "Primeiro Nome": "$first_name", "Último Nome": "$last_name"}
+)
+
+```
+Obter o número de trabalhadores por departamento
+```
+
+db.humanresources.aggregate([
+	{"$match": {
+		"department.name": {
+			"$exists": true,
+			"$ne": null
+		}
+	}},
+	{"$group": {_id:"$department.name", "Número de Empregados":{$sum:1}}},
+	{"$project": {_id: 0,  "Departamento" : "$_id", "Número de Empregados": 1}}
+])
+
+```
+Top 5 trabalhadores com maior salário
+```
+
+db.humanresources.find({},
+	{_id: 0, "Primeiro Nome": "$first_name", "Último Nome": "$last_name", "Salário": "$salary"}
+).sort({salary:-1}).limit(5)
+```
+
+Soma de todos os salários mensais
+```
+
+db.humanresources.aggregate([ 
+	{"$group": { _id: null,"Total": {$sum: "$salary"}}},
+	{"$project": {_id: 0,  "Total": 1}}
+])
+
+```
+Soma de todos os salários por região
+```
+
+db.humanresources.aggregate([
+	{"$match": {
+		"department.location.region": {
+			"$exists": true,
+			"$ne": null
+		}
+	}},
+	{"$group": {_id:"$department.location.region", "Total Salário":{$sum: "$salary"}}},
+	{"$project": {_id: 0,  "Região" : "$_id", "Total Salário": 1}}
+])
+
+```
+Salário médio em cada cargo
+```
+
+db.humanresources.aggregate([
+	{"$group": {_id:"$job.title", "Salário Médio":{$avg: "$salary"}}},
+	{"$project": {_id: 0,  "Cargo" : "$_id", "Salário Médio": 1}}
+])
+
+```
+Número de departamentos por país
+```
+
+db.humanresources.aggregate([
+	{"$match": {
+		"department.location.country": {
+			"$exists": true,
+			"$ne": null
+		}
+	}},
+	{"$group": {_id: "$department.location.country", arrayset: {$addToSet: "$department.name"}}},
+	{"$project": {_id: 0, "Número de Departamentos": {"$size" : "$arrayset"}, "País" : "$_id"}}
+])
+
+```
+Encontrar os empregados que trabalham no departamento de Purchasing e quais os seus cargos
+```
+
+db.humanresources.find({"department.name":"Purchasing"}, 
+	{_id: 0, "Primeiro Nome": "$first_name", "Último Nome": "$last_name", "Cargo": "$job.title"}
+)
+
+```
+

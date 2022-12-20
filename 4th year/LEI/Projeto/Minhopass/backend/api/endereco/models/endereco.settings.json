@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "endereco",
+  "info": {
+    "name": "Endereco",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "morada": {
+      "type": "string"
+    },
+    "cod_post": {
+      "type": "string"
+    },
+    "cidade": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    }
+  }
+}
