@@ -1,3 +1,0 @@
-
-cuda: src/main.cu
-        nvcc -o bin/aa_tp_cuda -O3 -DD_GPU -arch=sm_30 src/main.cu

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="680a6724-5774-477b-9d9e-14f78841f9dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1m5DO73QJJKpSSfbdh70m1k9zdV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowStructure.ShowToolbar" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/banco-varias-contas11.java" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.7196149" />
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false">
+      <option name="MAIN_CLASS_NAME" value="projeto.servDist.cliente.Client" />
+      <module name="zeromq" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Diretorio" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="projeto.servDist.diretorio.DiretorioApp" />
+      <module name="zeromq" />
+      <option name="PROGRAM_PARAMETERS" value="server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServDist" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="projeto.servDist.distrital.ServDist" />
+      <module name="zeromq" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ServDist" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Diretorio" />
+    </list>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="680a6724-5774-477b-9d9e-14f78841f9dd" name="Default Changelist" comment="" />
+      <created>1608774522424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608774522424</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="620" y="33" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610848906664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="620" y="33" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610848906664" />
+    <state x="1143" y="154" width="575" height="726" key="#com.intellij.ide.util.MemberChooser" timestamp="1610912138934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1143" y="154" width="575" height="726" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610912138934" />
+    <state x="1048" y="267" width="650" height="500" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1610839475367">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1048" y="267" width="650" height="500" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610839475367" />
+    <state x="1032" y="204" width="766" height="622" key="FileChooserDialogImpl" timestamp="1614013499408">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="204" width="766" height="622" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614013499408" />
+    <state width="896" height="309" key="GridCell.Tab.0.bottom" timestamp="1611188644485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="896" height="309" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611188644485" />
+    <state width="896" height="309" key="GridCell.Tab.0.center" timestamp="1611188644485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="896" height="309" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611188644485" />
+    <state width="896" height="309" key="GridCell.Tab.0.left" timestamp="1611188644485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="896" height="309" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611188644485" />
+    <state width="896" height="309" key="GridCell.Tab.0.right" timestamp="1611188644485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="896" height="309" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611188644485" />
+    <state width="890" height="327" key="GridCell.Tab.1.bottom" timestamp="1610495709821">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="890" height="327" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610495709821" />
+    <state width="890" height="327" key="GridCell.Tab.1.center" timestamp="1610495709820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="890" height="327" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610495709820" />
+    <state width="890" height="327" key="GridCell.Tab.1.left" timestamp="1610495709820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="890" height="327" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610495709820" />
+    <state width="890" height="327" key="GridCell.Tab.1.right" timestamp="1610495709820">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="890" height="327" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610495709820" />
+    <state x="761" y="98" width="1149" height="839" key="Maven.ArtifactSearchDialog" timestamp="1610824671765">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="98" width="1149" height="839" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610824671765" />
+    <state x="199" y="5" width="980" height="1035" key="SettingsEditor" timestamp="1610850621069">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="199" y="5" width="980" height="1035" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610850621069" />
+    <state x="1039" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1615140521239">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1039" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615140521239" />
+    <state x="1072" y="398" width="686" height="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1610849607627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1072" y="398" width="686" height="255" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1610849607627" />
+    <state x="1027" y="22" width="807" height="996" key="find.popup" timestamp="1610906885206">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1027" y="22" width="807" height="996" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610906885206" />
+    <state x="432" y="58" width="1478" height="918" key="new project wizard" timestamp="1614012661784">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="432" y="58" width="1478" height="918" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1614012661784" />
+    <state x="1014" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1610911092860">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1014" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610911092860" />
+  </component>
+</project>

@@ -1,0 +1,125 @@
+2.1:
+
+L2_DCR
+L3_DCR
+L2_DCM
+L3_DCM
+LD_INS
+TOT_INS
+FP_OPS
+
+2.2: i-j-k (+transposta)
+
+2.3.1: i-k-j
+2.3.2: j-k-i (+transposta)
+
+IJK and JKI both have column wise access patterns in at least one of the matrices involved in the computation.
+This means that a line of cache transfered from memory will not be fully used in a given iteration of the
+innermost loop, which will degrade the algorythm's overall performance, which may not be noticed in smaller
+datasets, but will become more noticeable for larger ones. By Transposing the second matrix
+in the first implementation, and both in the second we are able to mitigate this problem by making both
+accesses (in matrix A and matrix B) follow the same pattern (row wise in both cases).
+
+While the last paragraph holds true, since for the first three dataset sizes, the data fits in a given level of cache, 
+most improvements will not have truly significant effects. However, some effects are still noticeable.
+
+JKI has the worst performance as it will have the most amount of cache misses in theory, as it accesses both the result 
+matrix and the first matrix in a row wise fashion, which corresponds to the access pattern with worst memory performance.
+
+2.4: size * size * sizeof(float) * 3 <= CACHE_SIZE, where size = 2^k
+     i)   32x32
+     ii)  128x128
+     iii) 1024x1024
+     iv)  2048x2048
+
+NOTES:
+ -> L1 Cache size: 64KB
+ -> L2 Cache size: 256KB
+ -> L3 Cache size: 30MB (shared)
+
+2.5: Tabela de tempos NoVec no excel
+
+2.6: i) r662 is able to fetch 16 single precision floating point numbers in each access to the cache (as a cache line is 64B)
+
+        For a ROW WISE access pattern, we will be able to use multiple values from a line in consecutive iterations.
+        This means that, for every line fetched, in theory, we can go for up to 16 iterations without another acces.
+        As such, for each of the N lines of the matrix, we will need to make N/16 accesses to RAM. So:
+            No Accesses = N * N/16
+        However, for a COLUMN WISE access pattern, we will not be able to use more than one FP value from a line, because this
+        access pattern does not take advantage of the SPACIAL LOCALITY property. Thus, for each element of a matrix, we will have
+        to make a new access. So:
+            No Accesses = N * N
+        
+        IJK -> One Row Wise and one Column Wise -> N * N + N * N/16 = N * (N + N/16)
+        JKI -> Both Column Wise -> 2 * N * N
+        All the others are either row wise from the start (IJK) or use the transpose matrix to
+        become so, and thus -> 2 * N * N/16 = N * N/8
+
+        The number of Bytes transfered to and from RAM will be these previously established values times the size of a cache line,
+        which, as it was also previously established, is 64B.
+
+     ii) Usar o L3_TCM
+
+2.7: i) N^3 * 2, N in {32,128,1024,2048}
+
+        It's worthy of note that we were not able to obtain logical values for the PAPI_FP_OPS for the two smallest sizes.
+
+        In all cases for the two biggest sizes, the amount of FP operations is noticeably larger than what was expected. This is possibly due
+        to options the compiler decided to make that are out of our control.
+
+     ii) XD.pt
+
+2.8: Tabela de Miss Rates no Excel
+
+     The smallest data sizes probably have a non-null miss rate in cache levels 2 and 3 because of the cache clearance we perform beforehand.
+
+2.9: When it comes to boundary analysis on the matrix multiplication algorithm, we can state that, for evey element that is added to the matrices, that is, going
+     from N to N+1, we are performing 6N^2 + 6N + 2 more calculations. This certainly puts some strain on the CPU, but a polynomial evolution is not the most penalizing 
+     point.
+     When it comes to memory, the biggest concerns are access to RAM. If we accept a model where we have no cache, and accesses to RAM are
+     direct, for the three patterns of memory access (Column wise, Row wise and Mixed), we find that their respective growth is not larger than
+     the growth of computational overhead (MOSTRAR CÁLCULOS E PROVAS). This does not mean, however, that this family of algorithms (especially those
+     with Mixed or Column wise patterns) are not memory bound. As we know, memory is leaps and bounds slower than PUs, and, as such, the polynomial
+     growth of computational overhead may not be the deciding factor. (on paper, though, assuming PU speeds are the same as the memory's, the later's
+     growth is indeed slower).
+     What we are not accounting for here is memory bandwidth. We are assuming infinite badnwidth, which is not a logical assumption and, as such,
+     taking that into account, while the PU may be able to handle the computational overhead increase, memory bandwidth is certainly not as capable,
+     and would show deterioration faster than the computational power (REVIEW THIS SENTENCE)
+     As such, we would argue that the algorithm is memory bound.
+     (SUPPORT THIS FURTHER WITH ROOFLINE GRAPH)
+     Transposing a matrix (in the case of IJK) or two (in the case of JKI) tones this boundary down by applying in a practical context spacial locality.
+     As we are acquiring at a time 16 floating point elements from memory, we make it so that we artificially require less bandwidth, as all of these items
+     are usefull, and, for several iterations, we will not require accesses to RAM. In practise, for the IJK study case, we recorded not only a significant speedup, 
+     equivalent aproximately to an order of magnitude, but also smaller miss rates, as we did not have to access higher level caches from any given level as often.
+
+2.10: i) The reason why Matrix Blocking improves efficiency is that it explores the SPACIAL LOCALITY PRINCIPLE.
+         This principle dictates that, if a value is used, it's imediate neighbours have a high chance of also being
+         used in the near future. Matrix blocking introduces an optimization to the basic matrix multiplication algorithm because
+         we only use a part of the matrix at once, called a TILE. This tile helps explore SPACIAL LOCALITY as it allows all the values
+         that will be fetched from RAM to be used efficiently, namely by using them once and never again, in theory.
+         We can explore this further, by exploring what a good Tile size is. As stated previously, a line of cache contains 16 single precision
+         floating point numbers, and these will all be pulled from the cache at once. By making the block size 16, we ensure that an entire line
+         of cache is processed thourouly and will not be needed again, thus taking advantage of SPACIAL LOCALITY to its fullest. We can also, of course
+         use multiples of 16 for this purpose, though we only focused on 16.
+
+      ii) implementação com blocos
+
+2.11: Implementação com vetorização
+      Mostrar os optrpt com as cenas vetorizadas
+      Tabela de Tempos Vec no excel
+
+      Vectorization was indeed achieved, with the "pragma ivdep" clause ou the "pragma vector always" clause. However, it was not
+      entirely efficient, having minimal gains in most, loss in some and only significant gains in one. This is strange, but not entirely,
+      as the optimization report did warn that vectorization was possible but deemed as inefficient. Also, for the smallest dataset, we were not
+      able to distinguish any difference in performance.
+
+      Only implementations with ROW WISE access patterns were able to be vectorized.
+
+2.12: Implementação com OpenMP
+      Tabela de tempos do OMP no excel
+
+      Of course divind the task amongst the 24 processors found in this node improves performance.
+    
+2.13: Implementação com CUDA
+
+
