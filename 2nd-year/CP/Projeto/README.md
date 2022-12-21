@@ -1,4 +1,4 @@
-# *Problemas* (Problems)
+# *Resolução de Problemas* (Problem solving)
 
 This project had two objectives:
 
