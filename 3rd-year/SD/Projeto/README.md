@@ -1,4 +1,4 @@
-# *Troca de ficheiros* (File exchange)
+# *Troca de Ficheiros de Música* (Music File Exchange)
 
 This project implements a platform for exchanging files, like SoundCloud.
 
