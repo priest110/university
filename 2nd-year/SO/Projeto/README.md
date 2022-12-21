@@ -1,4 +1,4 @@
-# *Gestor de Vendas* (Sales Manager)
+# *Gestor de Inventário e Vendas* (Inventory and Sales Manager)
 
 The objective of this project was to create a sales manager, composed by:
 - sales server;
