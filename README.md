@@ -1,8 +1,8 @@
 <div align="center">
-    <h1>:mortar_board: University of Minho - Software Engineering</h1>
+    <h1>:mortar_board: University of Minho - Computer and Software Engineering</h1>
 </div>
 
-During my master's degree in Software Engineering I had the opportunity to evolve multiple skills, either through different fields of study, tools and 
+During my master's degree in Computer and Software Engineering I had the opportunity to evolve multiple skills, either through different fields of study, tools and 
 technologies, or with different people and ways of working. In this repository, I summarize all the projects I developed and you can find out more about 
 each one of them below.
 
