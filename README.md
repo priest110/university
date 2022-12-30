@@ -37,7 +37,7 @@ each one of them below.
 
 - [Bases de Dados NoSQL (BDNoSQL)](4th-year/Complementares/BDNoSQL) [NoSQL Databases]: Human Resources Database Management Systems
 - [Desenvolvimento de Aplicações WEB (DAW)](4th-year/Complementares/DAW) [Web Applications Development]: "myGoogleDrive"
-- [Laboratório em Engenharia Informática (LEI)](4th-year/LEI) [Laboratory in Computer Engineering]: Web Manager of CVs and ePortefolios "Minhopass"
+- [Laboratório em Engenharia Informática (LEI)](4th-year/LEI) [Laboratory in Informatics Engineering]: Web Manager of CVs and ePortefolios "Minhopass"
 
 - #### Area of Specialization: [Computação Paralela Distribuída (CPD)](4th-year/CPD) [Distributed Parallel Computing]
 
