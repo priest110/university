@@ -28,7 +28,7 @@ each one of them below.
 - [Desenvolvimento de Sistemas de Software (DSS)](3rd-year/DSS) [Software Systems Development]: Media Center to share music/video
 - [Sistemas Distribuídos (SD)](3rd-year/SD) [Distributed Systems]: Music File Exchange
 - [Computação Gráfica (CG)](3rd-year/CG) [Computer Graphics]: Solar System
-- [Laboratórios de Informática IV (LI4)](3rd-year/LI4) [Computer Labs IV]: Restaurant Mangement System
+- [Laboratórios de Informática IV (LI4)](3rd-year/LI4) [Computer Labs IV]: Restaurant Management System
 - [Modelos Estocásticos de Investigação Operacional (MEIO)](3rd-year/MEIO) [Stochastic Models of Operations Research]: Dynamic Stochastic Programming
 - [Processamento de Linguagens (PL)](3rd-year/PL) [LanguageProcessing]: Template Multi-File & DSL for Digital Humanities Notebooks
 - [Sistemas de Representação de Conhecimento e Raciocínio (SRCR)](3rd-year/SRCR) [Knowledge and Reasoning Representation Systems]: Imperfect knowledge & Search Algorithms
