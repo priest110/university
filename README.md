@@ -6,7 +6,7 @@ During my master's degree in Computer and Software Engineering I had the opportu
 technologies, or with different people and ways of working. In this repository, I summarize all the projects I developed and you can find out more about 
 each one of them below.
 
-**Note:** For each project, the syntax is as follows ":portugal: Subject [:uk: Subject]: Project(s)"
+**Note:** For each project, the syntax is as follows " :portugal: Subject [ :uk: Subject]: Project(s)"
 
 ## :computer: Projects
 
